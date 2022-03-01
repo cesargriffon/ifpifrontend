@@ -5,32 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha pagina</title>
+    
 </head>
-<script>
-    alert("Obrigado por visitar minha página!!")
-</script>
+
+
+
 <style>
     body{
         background-color: rgb(130, 212, 223);
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
 
     h1{
         color: rgb(3, 61, 3);
     }
 
+    li, 
     p{
         color: rgba(7, 20, 77, 0.836);
         font-weight: bold;
         
     }
 
+    img{
+        width: 20rem;
+        border-radius: 5rem;
+    }
+
+   input{
+        font-size:  1.4rem;
+        color:  blue;
+        margin-bottom: 1rem;
+    }
+
+    button{
+        font-size: 1.4rem;
+        width:  10rem;
+        border-radius: 10px;
+    }
+
 
 </style>
+
 <body>
+
 <img src=https://media-exp1.licdn.com/dms/image/C4D03AQFxlCkU5SVIFQ/profile-displayphoto-shrink_800_800/0/1587342625133?e=1650499200&v=beta&t=V-K9AezfdzQl6q0VfZod0gfS43REbtjPwaPD4mdNIXQ alt="imagem perfil"/>
+
+
+<h2>Cadastre-se para receber novos vídeos</h2>
+<input id="caixa_nome" type="text" placeholder="Digite seu nome aqui" />
+<input id="caixa_email" type="text" placeholder="Digite seu e-mail aqui" />
+<button id="btn_cadastrar">Cadastrar</button>
+
+
 <h1>SOBRE MIM</h1>
 <p>Sou o César, formado em Sistemas de Informações pela Universidade Federal do Piauí, futuramente pretendo me tornar programador front end, logo apos estudar e dominar um pouco a linguagem, pretendo investir no back end, gosto muito de cinema, mas por conta da pandemia não estou indo, mas logo após a segunda dose, a vida vai voltando normal aos poucos, falando um pouco de mim, trabalho praticamente o dia inteiro, sobra somente a noite para poder estudar, fazer as atividades do IFPI, gosto de ajudar as pessoas no que eu posso, alem de estudar para se tornar programador estudo tambem para concurso devido a minha formação superior.</p>
 
@@ -39,5 +69,31 @@
 
 <h1>PRETENÇÕES</h1>
 <p>Hoje em dia, trabalho em um comercio, diferente da função de TI, busco hoje me especializar para poder entrar no mercado, pode até demorar, mas um dia chega, concurso tambem penso em fazer inclusive para fora do Piaui, pois existe mais oportunidades por lá, a area de TI é uma area muito abrangente, sem falar que outros profissionais costumam ajudar quem começa, busco alem de aprender ajudar outras pessoas que precisam dentro da area, atualmente também invisto na area gráfica pois tenho facilidade com Corel e Photoshop.</p>
+
+<h1>Minhas linguagens de programação</h1>
+<ul>
+    <li>Javascript</li>
+    <li>HTML</li>
+    <li>Python</li>
+    <li>Linguagem C</li>
+    <li>Java</li>
+</ul>
+
+<script>
+    const comp_btn_cadastrar = document.getElementById('btn_cadastrar');
+      const comp_caixa_nome = document.getElementById('caixa_nome');
+       const comp_caixa_email = document.getElementById('caixa_email');
+
+    comp_btn_cadastrar.onclick = () => { 
+        const nome = comp_caixa_nome.value;
+        const email = comp_caixa_email.value;
+
+        const mensagem = "Olá " + nome +  " obrigado por cadastrar seu email: "+ email + " - Abraços!!"
+       // console.log(mensagem);
+       alert(mensagem);
+};
+
+  
+</script>
 </body>
 </html>
