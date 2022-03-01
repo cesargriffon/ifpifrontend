@@ -12,7 +12,7 @@
 
 <style>
     body{
-        background-color: rgb(130, 212, 223);
+        background-color: #90e0ef;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -55,11 +55,6 @@
 <img src=https://media-exp1.licdn.com/dms/image/C4D03AQFxlCkU5SVIFQ/profile-displayphoto-shrink_800_800/0/1587342625133?e=1650499200&v=beta&t=V-K9AezfdzQl6q0VfZod0gfS43REbtjPwaPD4mdNIXQ alt="imagem perfil"/>
 
 
-<h2>Cadastre-se para receber novos vídeos</h2>
-<input id="caixa_nome" type="text" placeholder="Digite seu nome aqui" />
-<input id="caixa_email" type="text" placeholder="Digite seu e-mail aqui" />
-<button id="btn_cadastrar">Cadastrar</button>
-
 
 <h1>SOBRE MIM</h1>
 <p>Sou o César, formado em Sistemas de Informações pela Universidade Federal do Piauí, futuramente pretendo me tornar programador front end, logo apos estudar e dominar um pouco a linguagem, pretendo investir no back end, gosto muito de cinema, mas por conta da pandemia não estou indo, mas logo após a segunda dose, a vida vai voltando normal aos poucos, falando um pouco de mim, trabalho praticamente o dia inteiro, sobra somente a noite para poder estudar, fazer as atividades do IFPI, gosto de ajudar as pessoas no que eu posso, alem de estudar para se tornar programador estudo tambem para concurso devido a minha formação superior.</p>
@@ -71,6 +66,7 @@
 <p>Hoje em dia, trabalho em um comercio, diferente da função de TI, busco hoje me especializar para poder entrar no mercado, pode até demorar, mas um dia chega, concurso tambem penso em fazer inclusive para fora do Piaui, pois existe mais oportunidades por lá, a area de TI é uma area muito abrangente, sem falar que outros profissionais costumam ajudar quem começa, busco alem de aprender ajudar outras pessoas que precisam dentro da area, atualmente também invisto na area gráfica pois tenho facilidade com Corel e Photoshop.</p>
 
 <h1>Minhas linguagens de programação</h1>
+
 <ul>
     <li>Javascript</li>
     <li>HTML</li>
@@ -78,6 +74,13 @@
     <li>Linguagem C</li>
     <li>Java</li>
 </ul>
+
+<p>Apesar de ter visto todas essas linguagens, estou primeiramente buscando me aperfeiçoar em front-end para depois estudar back-end</p>
+
+<h2>Cadastre-se para receber novos conteúdos</h2>
+<input id="caixa_nome" type="text" placeholder="Digite seu nome aqui" />
+<input id="caixa_email" type="text" placeholder="Digite seu e-mail aqui" />
+<button id="btn_cadastrar">Cadastrar</button>
 
 <script>
     const comp_btn_cadastrar = document.getElementById('btn_cadastrar');
@@ -88,9 +91,8 @@
         const nome = comp_caixa_nome.value;
         const email = comp_caixa_email.value;
 
-        const mensagem = "Olá " + nome +  " obrigado por cadastrar seu email: "+ email + " - Abraços!!"
-       // console.log(mensagem);
-       alert(mensagem);
+        const mensagem = "Olá " + nome +  " obrigado por cadastrar seu email: "+ email + " - logo irá receber novos conteúdos. Abraços!!"
+        alert(mensagem);
 };
 
   
