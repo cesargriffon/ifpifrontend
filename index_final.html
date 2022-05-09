@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha pagina</title>
+    
+</head>
+
+
+
+<style>
+    body{
+        background-color: #90e0ef;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    h1{
+        color: rgb(3, 61, 3);
+    }
+
+    li, 
+    p{
+        color: rgba(7, 20, 77, 0.836);
+        font-weight: bold;
+        
+    }
+
+    img{
+        width: 20rem;
+        border-radius: 5rem;
+    }
+
+   input{
+        font-size:  1.4rem;
+        color:  blue;
+        margin-bottom: 1rem;
+    }
+
+    button{
+        font-size: 1.4rem;
+        width:  10rem;
+        border-radius: 10px;
+    }
+
+
+</style>
+
+<body>
+
+<img src="https://media-exp1.licdn.com/dms/image/C4D03AQFxlCkU5SVIFQ/profile-displayphoto-shrink_200_200/0/1587342625133?e=1657756800&v=beta&t=wQe3AgEJ3Cy40V7LOnLM304hN_qYVRfeNQn3iR1PixQ"/>
+
+
+
+<h1>SOBRE MIM</h1>
+<p>Sou o César, formado em Sistemas de Informações pela Universidade Federal do Piauí, futuramente pretendo me tornar programador front end, logo apos estudar e dominar um pouco a linguagem, pretendo investir no back end, gosto muito de cinema, mas por conta da pandemia não estou indo, mas logo após a segunda dose, a vida vai voltando normal aos poucos, falando um pouco de mim, trabalho praticamente o dia inteiro, sobra somente a noite para poder estudar, fazer as atividades do IFPI, gosto de ajudar as pessoas no que eu posso, alem de estudar para se tornar programador estudo tambem para concurso devido a minha formação superior.</p>
+
+<h1>CURSOS, JOGOS, SERIES</h1>
+<p>Como ja citei, formado em Sistemas de Informações, tenho alguns cursos profissionalizantes na area de TI, gosto de rock, inclusive 2017 fiz uma economia somente pra poder assistir Iron Maiden no Rock In Rio, curto bastante jogos eletronicos, acompanho desde o super nintendo ate os dias atuais, assim que der, vou comprar o PS4 somente pra poder acompanhar a saga de Mortal Kombat, pois é um jogo que eu acompanho desde criança, e fui evoluindo de consoles somente por conta da trajetoria do jogo, e tambem por conta da continuação da serie Batman do PS3, que no PS4 continua a historia com Batman Arkhan Knight, inclusive tambem meu TCC foi baseado no tema, criei um pequeno jogo 2D que fala da evolução dos jogos eletronicos, que nao consegui terminar, penso em fazer um mestrado e continuar com o jogo completo baseado no meu TCC, Series nao sou muito de assistir, a ultima serie que assisti foi Gothan. Baseado do Batman.</p>
+
+<h1>PRETENÇÕES</h1>
+<p>Hoje em dia, trabalho em um comercio, diferente da função de TI, busco hoje me especializar para poder entrar no mercado, pode até demorar, mas um dia chega, concurso tambem penso em fazer inclusive para fora do Piaui, pois existe mais oportunidades por lá, a area de TI é uma area muito abrangente, sem falar que outros profissionais costumam ajudar quem começa, busco alem de aprender ajudar outras pessoas que precisam dentro da area, atualmente também invisto na area gráfica pois tenho facilidade com Corel e Photoshop.</p>
+
+<h1>Minhas linguagens de programação</h1>
+
+<ul>
+    <li>Javascript</li>
+    <li>HTML</li>
+    <li>Python</li>
+    <li>Linguagem C</li>
+    <li>Java</li>
+</ul>
+
+<p>Apesar de ter visto todas essas linguagens, estou primeiramente buscando me aperfeiçoar em front-end para depois estudar back-end</p>
+
+<h2>Cadastre-se para receber novos conteúdos</h2>
+<input id="caixa_nome" type="text" placeholder="Digite seu nome aqui" />
+<input id="caixa_email" type="text" placeholder="Digite seu e-mail aqui" />
+<button id="btn_cadastrar">Cadastrar</button>
+
+<script>
+    const comp_btn_cadastrar = document.getElementById('btn_cadastrar');
+      const comp_caixa_nome = document.getElementById('caixa_nome');
+       const comp_caixa_email = document.getElementById('caixa_email');
+
+    comp_btn_cadastrar.onclick = () => { 
+        const nome = comp_caixa_nome.value;
+        const email = comp_caixa_email.value;
+
+        const mensagem = "Olá " + nome +  " obrigado por cadastrar seu email: "+ email + " - logo irá receber novos conteúdos. Abraços!!"
+        alert(mensagem);
+};
+
+  
+</script>
+</body>
+</html>
